@@ -1,5 +1,5 @@
 # Recipe App API (v2) Source Code
 
-This is the code for the second edition of the course that was released in 2022.
+This is the code to develop backend REST API using Django Rest Framework 
 
-Course code for: [Build a Backend REST API with Python &amp; Django - Advanced](https://londonapp.dev/c2)
+Contact jrauljperez02 on jraul.jperez71@gmail.com
