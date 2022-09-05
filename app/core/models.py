@@ -97,3 +97,13 @@ class Ingredient(models.Model):
 
     def __str__(self):
         return self.name
+
+class Post(models.Model):
+    """Post object"""
+    user = models.ForeignKey(
+        settings.AUTH_USER_MODEL,
+        on_delete=models.CASCADE
+    )
+    title = models.CharField(max_length=255)
+    img_description = models.TextField(null=False)
+    post_description = models.TextField(null=False)

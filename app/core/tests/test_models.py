@@ -98,3 +98,16 @@ class ModelTests(TestCase):
         file_path = models.recipe_image_file_path(None, 'example.jpg')
 
         self.assertEqual(file_path, f'uploads/recipe/{uuid}.jpg')
+
+    def test_create_blog(self):
+        """Test creating a post for a blog"""
+        user = get_user_model().objects.create_user(
+            'test@example.com',
+            'testpassword123',
+        )
+        post = models.Post.objects.create(
+            user = user,
+            title = 'Example title',
+            img_description = 'www.image.jpg',
+            post_description = 'This a description test'
+        )
